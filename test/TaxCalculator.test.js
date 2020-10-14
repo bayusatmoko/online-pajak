@@ -52,7 +52,7 @@ describe('TaxCalculator', () => {
       expect(annualTaxResult).toEqual(expectedAnnualTaxResult);
     });
 
-    it('should return 115000000 when the salary is 50000000', () => {
+    it('should return 125000000 when the salary is 50000000', () => {
       const salary = 50000000;
       const taxCalculator = new TaxCalculator(scheme, salary);
       const expectedAnnualTaxResult = 125000000;
@@ -73,7 +73,7 @@ describe('TaxCalculator', () => {
       expect(annualTaxResult).toEqual(expectedAnnualTaxResult);
     });
 
-    it('should return 750000 when the salary is 25000000 and profile TK0', () => {
+    it('should return 31900000 when the salary is 25000000 and profile TK0', () => {
       const salary = 25000000;
       const profile = 'TK0';
       const taxCalculator = new TaxCalculator(scheme, salary, profile);
